@@ -8,8 +8,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/AlecAivazis/survey/v2/core"
-	"github.com/AlecAivazis/survey/v2/terminal"
+	"github.com/achuchev/survey/v2/core"
+	"github.com/achuchev/survey/v2/terminal"
 )
 
 // DefaultAskOptions is the default options on ask, using the OS stdio.
@@ -265,7 +265,6 @@ in the documentation. For example:
 	}
 
 	survey.AskOne(prompt, &name)
-
 */
 func AskOne(p Prompt, response interface{}, opts ...AskOpt) error {
 	err := Ask([]*Question{{Prompt: p}}, response, opts...)
